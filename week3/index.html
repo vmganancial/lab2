@@ -3,47 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Hi, I'm Victor!</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #eafbf4;
             margin: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #eafbf4;
             color: #333;
         }
 
         #content {
             padding: 20px;
-            text-align: center; 
+            text-align: center;
         }
 
         #profile-pic {
-            width: 100%;
-            max-width: 300px;
+            width: 200px;
+            height: auto;
             border-radius: 15px;
-            margin-bottom: 20px;
-        }
-
-        h1, h2, h3 {
-            color: #4caf50; 
-            text-align: center;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #4caf50; 
+            margin: 0 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #4caf50;
         }
 
         h1 {
-            font-family: Arial, sans-serif;
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 10px;
         }
 
+        h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #4caf50;
+            margin-bottom: 20px;
+        }
+
         img {
-            width: 100%;
-            max-width: 400px;
+            max-width: 200px;
             height: auto;
             border-radius: 15px;
             margin: 0 10px 20px;
@@ -58,6 +55,15 @@
             text-align: center;
         }
 
+        .picture-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .picture-row img {
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -94,16 +100,15 @@
 
         <h2>Photos To Know Me Better</h2>
         <h3 class="center-align">Favorite Anime:</h3>
-        <p class="center-align">Kimetsu No Yaiba (Demon Slayer)</p>
-        <img src="demonslayer.png" alt="Demon Slayer">
-        <p class="center-align">Boku no Hiro Akademia (My Hero Academia)</p>
-        <img src="mha.png" alt="My Hero Academia">
-        
+        <div class="picture-row">
+            <img src="demonslayer.png" alt="Demon Slayer">
+            <img src="mha.png" alt="My Hero Academia">
+        </div>
+
         <h3 class="special-heading center-align">Favorite Online Games:</h3>
-        <p class="center-align">Valorant</p>
-        <img src="valorant.png" alt="Valorant">
-        <p class="center-align">Mobile Legends: Bang Bang</p>
-        <img src="ml.png" alt="Mobile Legends: Bang Bang">
-    </div>
+        <div class="picture-row">
+            <img src="valorant.png" alt="Valorant">
+            <img src="ml.png" alt="Mobile Legends: Bang Bang">
+        </div>
 </body>
 </html>
