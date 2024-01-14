@@ -1,67 +1,92 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Hi, I'm Victor!</title>
+     <link rel="icon" href="favicon.png" type="img/favicon.png">
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #eafbf4;
             margin: 20px;
             display: flex;
-            background-color: #eafbf4;
+            flex-direction: column;
+            align-items: center;
             color: #333;
         }
 
         #content {
-            flex: 1;
             padding: 20px;
+            text-align: center;
         }
 
         #profile-pic {
-            width: 100%;
-            max-width: 300px;
+            width: 200px;
+            height: auto;
             border-radius: 15px;
-            margin-bottom: 20px;
+            margin: 0 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #4caf50;
         }
 
         h1 {
-            color: #4caf50; /* Green header text color */
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #4caf50; 
         }
 
         h2 {
-            color: #4caf50;
-            margin-top: 30px;
-            padding-bottom: 10px;
+            font-size: 22px;
+            border-bottom: 2px solid #4caf50;
+            margin-bottom: 20px;
+            color: #4caf50; 
         }
 
+        p {
+            text-align: left;
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 15px;
+            margin: 0 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h3.special-heading {
+            border-bottom: none;
+            color: #4caf50; 
+        }
+
+        .picture-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .picture-row img {
+            margin: 0 10px;
+        }
+
+        .picture-row h2 {
+            color: #4caf50; 
+        }
     </style>
-</head>
+    </head>
 <body>
     <div id="content">
-        <img id="profile-pic" src="C:\Users\Victor Angelo\lab2\week3\profilepic.png" alt="Profile Picture">
-<h1>Personal Information</h1>
+        <h1>Hi! I'm Victor!</h1>
+        <img id="profile-pic" src="profilepic.png" alt="Profile Picture">
+
+        <h2>Personal Information</h2>
         <p><strong>Name:</strong> Victor Angelo M. Ganancial</p>
         <p><strong>Nickname:</strong> Victor</p>
         <p><strong>Age:</strong> 20 years old </p>
         <p><strong>Birthdate:</strong> August 24, 2003 </p>
         <p><strong>Hobbies / Interests:</strong> Playing video games | Watching Netflix and Anime </p>
 
-        <h1>School Information</h1>
+        <h2>School Information</h2>
         <p><strong>Senior High School Graduated From:</strong> Pasay City South High School in Pasay City.</p>
         <p><strong>Course:</strong> Bachelor of Science in Information Technology with a specialization in Mobile and Internet Technologies.</p>
         <p><strong>Scholarship:</strong> None, but I used financial aid, which gave me a 50% discount on my tuition fee if my recent school is a public school</p>
@@ -70,32 +95,27 @@
         <p><strong>Why Yes?</strong> I chose this course because, since I was little, my parents saw my potential in the technology industry, and I also have an interest in this field.</p>
         <p><strong>I.T. Experience:</strong> I don't have any programming experience yet, but I did learn some of the basics in my first year of college. I liked playing video games such as Valorant and mobile games like Mobile Legends.</p>
 
-        <h1>Subject Related Questions</h1>
+        <h2>Subject Related Questions</h2>
         <p><strong>What do you expect to learn from this course (Web Programming)?</strong> My expectations in the course of web programming are that I will learn and gain interest in building a website.</p>
         <p><strong>What do you want to learn to help you in your chosen Major?</strong> I want to learn the basics and enhance my abilities in programming.</p>
 
-        <h1>Life Questions</h1>
+        <h2>Life Questions</h2>
         <p><strong>Goals in life:</strong> My goals in life are to be successful in my career, be financially stable, and achieve a healthy lifestyle.</p>
         <p><strong>Do you have a dream that you wish to fulfill?</strong> Yes, my dream is to raise a family in the future and provide support for my children and my parents.</p>
 
-        <h1>Any other interesting aspects of your life that you would like to share:</h1>
+        <h2>Any other interesting aspects of your life that you would like to share:</h2>
         <p>I'm the type of person who really doesn't talk a lot if the people with whom I talk are not very familiar to me, but when I'm with someone who is really close to me, I become really talkative. I'm not a sporty type of person. I don't really play well when it comes to physical activities. When it comes to video games, I cannot say that I am excellent at playing the games that I play. I'm like an average player with knowledge of the game. I don't have a talent for singing or dancing.</p>
 
-<h1>Photos To Know Me Better</h1>
-<h2>Favorite Anime:</h2>
-        <p><strong>Kimetsu No Yaiba (Demon Slayer)</strong></p>
-        <img src="C:\Users\Victor Angelo\lab2\week3\demonslayer.png" alt="Demon Slayer">
+        <h2>Photos To Know Me Better</h2>
+        <h3 class="special-heading center-align">Favorite Anime:</h3>
+        <div class="picture-row">
+            <img src="demonslayer.png" alt="Demon Slayer">
+            <img src="mha.png" alt="My Hero Academia">
+        </div>
 
-        <p><strong>Boku no Hiro Akademia (My Hero Academia)</strong></p>
-<img src="C:\Users\Victor Angelo\lab2\week3\mha.png" alt="My Hero Academia">
-
-        <h2>Favorite Online Games:</h2>
-        <p><strong>Valorant</strong></p>
-<img src="C:\Users\Victor Angelo\lab2\week3\valorant.png" alt="Valorant">
-
-        <p><strong>Mobile Legends: Bang Bang</strong></p>
-<img src="C:\Users\Victor Angelo\lab2\week3\ml.png" alt="Mobile Legends: Bang Bang">
-    </div>
+        <h3 class="special-heading center-align">Favorite Online Games:</h3>
+        <div class="picture-row">
+            <img src="valorant.png" alt="Valorant">
+            <img src="ml.png" alt="Mobile Legends: Bang Bang">
+        </div>
 </body>
-</html>
-
