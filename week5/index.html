@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi! I'm Celestrix</title>
+    <link rel="icon" href="favicon.png" type="img/favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #eafbf4;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eafbf4;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #00796b;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        nav a:hover {
+            color: #555;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+
+        .home-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #00796b;
+        }
+
+        .profile-text {
+            color: #00796b;
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .profile-details {
+            color: #00796b;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="greeting">Welcome to My Personal Website!</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#resource">Resource</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home-page">
+        <img src="profilepic.png" alt="Profile Picture" class="profile-image">
+        <div class="profile-text">
+            <p id="greeting-text">Hi! I'm Victor Angelo Ganancial</p>
+        </div>
+        <div class="profile-details">
+            <p>IT Student | Gamer | Tech Enthusiast</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/victor-angelo-ganancial-797850244/" target="_blank"><img src="Linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.tiktok.com/@victor_gnncl" target="_blank"><img src="Tiktok.png" alt="TikTok"></a>
+        <a href="https://www.instagram.com/victor_gnncl/" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/victor.ganancial" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('greeting').click();
+        });
+
+        document.getElementById('greeting').addEventListener('click', function() {
+            alert('Thank you for stepping into the world of my developing website! It's made even more special by your presence:)');
+        });
+    </script>
+</body>
+</html>
