@@ -10,6 +10,14 @@ if (clickMeButton) {
   });
 }
 
+// Form button
+    const formButton = document.getElementById('formButton');
+    if (formButton) {
+      formButton.addEventListener('click', function() {
+        // Navigate to the form page
+        window.location.href = 'form.php';
+      });
+
   // Ok button
   const okButton = document.getElementById('okButton');
   if (okButton) {
