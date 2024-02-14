@@ -8,7 +8,6 @@
 <body>  
 
 <?php
-// define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
@@ -100,5 +99,29 @@ echo "<br>";
 echo $gender;
 ?>
 
+<?php
+$servername = "localhost";
+$username = "webprogmi221";
+$password = "g_6bCitLu.ljMK*m";
+$dbname = "webprogmi221";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO vmganancial_myguests (name,email,website,comment,gender)
+VALUES ('$name', '$email', '$website', 'comment', '$gender')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
 </body>
 </html>
