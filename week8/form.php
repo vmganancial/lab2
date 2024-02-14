@@ -1,13 +1,5 @@
-<!DOCTYPE HTML>  
-<html>
-<head>
-<style>
-.error {color: #00796b;}
-</style>
-</head>
-<body>  
-
 <?php
+// define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
@@ -100,14 +92,13 @@ echo $gender;
 ?>
 
 <?php
-// For Xampp Localhost
+//for XAMPP
 //$servername = "localhost";
 //$username = "root";
 //$password = "";
 //$dbname = "myDB";
 
-// For socitcloud
-
+//for Socitcloud
 $servername = "localhost";
 $username = "webprogmi221";
 $password = "g_6bCitLu.ljMK*m";
@@ -120,9 +111,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO vmganancial_myguests (name,email,website,comment,gender)
+$sql = "INSERT INTO vmganancial_myguests (name, email, website, comment, gender)
 VALUES ('$name', '$email', '$website', '$comment', '$gender')";
-
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -132,6 +122,3 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-
-</body>
-</html>
