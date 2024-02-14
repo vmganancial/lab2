@@ -100,11 +100,27 @@ echo $gender;
 ?>
 
 <?php
+<<<<<<< HEAD
+=======
+if ($_Server["REQUEST_METHOD"] == "POST")
+{
+// For Xampp Localhost
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "myDB";
+
+// For socitcloud
+>>>>>>> refs/remotes/origin/main
 $servername = "localhost";
 $username = "webprogmi221";
 $password = "g_6bCitLu.ljMK*m";
 $dbname = "webprogmi221";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -113,7 +129,11 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO vmganancial_myguests (name,email,website,comment,gender)
+<<<<<<< HEAD
 VALUES ('$name', '$email', '$website', 'comment', '$gender')";
+=======
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+>>>>>>> refs/remotes/origin/main
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -122,6 +142,12 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+<<<<<<< HEAD
 ?>
+=======
+}
+?>
+
+>>>>>>> refs/remotes/origin/main
 </body>
 </html>
