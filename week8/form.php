@@ -101,7 +101,10 @@ echo $gender;
 
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/remotes/origin/main
 if ($_Server["REQUEST_METHOD"] == "POST")
 {
 // For Xampp Localhost
@@ -111,6 +114,9 @@ if ($_Server["REQUEST_METHOD"] == "POST")
 //$dbname = "myDB";
 
 // For socitcloud
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+=======
 >>>>>>> refs/remotes/origin/main
 $servername = "localhost";
 $username = "webprogmi221";
@@ -118,6 +124,10 @@ $password = "g_6bCitLu.ljMK*m";
 $dbname = "webprogmi221";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 =======
 
 >>>>>>> refs/remotes/origin/main
@@ -130,7 +140,11 @@ if ($conn->connect_error) {
 
 $sql = "INSERT INTO vmganancial_myguests (name,email,website,comment,gender)
 <<<<<<< HEAD
+<<<<<<< HEAD
 VALUES ('$name', '$email', '$website', 'comment', '$gender')";
+=======
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+>>>>>>> refs/remotes/origin/main
 =======
 VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 >>>>>>> refs/remotes/origin/main
@@ -143,7 +157,13 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 <<<<<<< HEAD
+<<<<<<< HEAD
 ?>
+=======
+}
+?>
+
+>>>>>>> refs/remotes/origin/main
 =======
 }
 ?>
